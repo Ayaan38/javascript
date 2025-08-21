@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript string method</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h2>Javascript String Method</h2>
+<p id="number_result"></p>
+<p id="string_result"></p>
+<script>
+    var x = 80;
+    var y = 90;
+    document.getElementById("number_result").innerHTML = x + y;
+    document.getElementById("string_result").innerHTML = String(x) + String(y);
+
+</script>
+<h2>Javacript Error Handling</h2>
+<p id="error_result"></p>
+<script>
+    try {
+        addalert("Welcome")
+    }
+    catch(err) {
+        document.getElementById("error_result").innerHTML = err.message;
+    }
+</script>
+<h2>Arrow Function</h2>
+<p id="result"></p>
+<script>
+    add = (a, b) => a + b;
+    document.getElementById('result').innerHTML = add(5, 10);
+</script>
+        
+        
+    </body>
+</html>
